@@ -1,0 +1,484 @@
+.container1 {
+    position:absolute;
+	overflow:hidden;
+	width: 100%;
+	min-width: 300px;
+	margin:auto;
+	padding:30px 30px 30px 30px;
+/*	height:600px;*/
+	height:1200px;
+	text-align: center;
+	position: relative;
+	display: block;
+	background-color:#000;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+.container1 p, .container1 a, .container1 h1, .container1 h2, .container1 h3{
+	color:#76b4d6;
+	cursor: auto;
+	font-weight:regular;
+	font-family: sans-serif;
+	text-decoration:none;
+	font-size: 14px;
+	text-align:left;
+	margin:5px;
+	padding:5px;
+	display: block;
+}
+.container1 a {	cursor:pointer;}
+.container1 a:hover {	cursor:pointer; -webkit-transform:translateX(15px) scale(1.05); -webkit-transition: all 1s ease;}
+.container1 h1, .container1 h2, .container1 h3 {	cursor: auto;}
+.container1 h1, .container1 h2{
+	background: -webkit-linear-gradient(70deg,#3290c7, #bee8eb);
+	background-clip: text;
+  	text-fill-color: transparent;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-moz-background-clip: text;
+  	-moz-text-fill-color: transparent;
+  	-o-background-clip: text;
+  	-o-text-fill-color: transparent;
+  	/*transition: all 1s ease;*/
+	animation: fadein 1s ;
+	text-align:left;
+	-webkit-transition: background 1s ease-out;
+	-webkit-transition: transform 1s ease-out;
+	
+	
+	z-index:3;
+}
+.container1 h1:hover, .container1 h2:hover{
+	transition: all 1s ease-in;
+	-webkit-transform: translateX(30px) scale(1.05);
+	-webkit-transition: background 1s ease-in;
+	-webkit-transition: transform 1s ease-in;
+		z-index:3;
+	
+}
+.container1 h1 {	font-size: 2em;}
+.container1 h2 {	font-size: 1.7em;}
+.container1 h3 {	font-size: 1.5em;}
+.container1 h3 a{	font-size:1em;	padding:0px; margin:0px;}
+/*.container1 h1:hover{
+	background: -webkit-linear-gradient(#fff, #777);
+	 -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	transition: all 1s ease;
+}*/
+
+.container1 .cont1{
+	position:absolute;
+	overflow:visible;
+	/*display:block;*/
+	/*-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;*/
+	/*left: calc(50% - 125px);*/
+	left:10px;
+	top:130px;
+	width:225px;
+	/*margin: 10px auto 0 auto;*/
+	/*margin:auto;*/
+	height:420px;
+	text-align: center;
+	z-index:2;	
+	display:flex;
+	flex-direction:column;
+	animation: fadein 1s ;
+	-webkit-animation: fadein 1s ;
+	-moz-animation: fadein 1s ;
+	-o-animation: fadein 1s ;
+	-webkit-transition: transform 1s ease-out;
+}
+
+.container1 .cont1:hover{
+	-webkit-transform:scale(1.05);
+	-webkit-transition: transform 1s ease-in;
+}
+
+.container1 .cont2 {
+	height:400px;
+	width:225px;
+	position:absolute;
+	overflow:hidden;
+	z-index:1;
+	-webkit-transform:scale(1);
+	-webkit-transition:transform 0.5s ease-out;
+	-moz-transform:scale(1);
+	-moz-transition:transform 0.5s ease-out;
+	-o-transform:scale(1);
+	-o-transition:transform 0.5s ease-out;
+}
+
+.container1 #man-pic {
+	height:400px;
+	width:5625px;
+	position:absolute;
+	/*display: inline-block;*/
+	background-image: url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/output.png");
+	background-size:100%;
+	background-position:left;
+	/*padding:0.1em;*/
+	background-repeat:no-repeat;
+	transition:transform 0.5s steps(24);
+	-webkit-transition:transform 0.5s steps(24);
+	-moz-transition:transform 0.5s steps(24);
+	-o-transition:transform 0.5s steps(24);
+}
+
+.container1 #man-pic.rotated {
+	background-position:right;
+	transform:translateX(-5400px);
+	transition:transform 0.5s steps(24);
+	-webkit-transform:translateX(-5400px);
+	-webkit-transition:transform 0.5s steps(24);
+	-moz-transform:translateX(-5400px);
+	-moz-transition:transform 0.5s steps(24);
+	-o-transform:translateX(-5400px);
+	-o-transition:transform 0.5s steps(24);
+}
+
+
+
+.container1 .hotspot{
+	position:absolute;
+	width: 40px;
+	margin: 2px auto 0 auto;
+	height:40px;
+	text-align: center;
+	position: relative;
+	display: block;
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spot1.png");
+	background-size:100%;
+	margin:5px;
+	opacity:1;
+	background-repeat:no-repeat;
+	cursor:pointer;
+ 	-webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.container1 .hotspot:hover{
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spothover1.png");
+	opacity:1;
+  animation: slide 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.container1 .hotspot.active{
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spothover1.png");
+	opacity:1;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+  	-o-transition: all 0.5s ease-in;
+}
+
+.container1 .cont1 #hot-hip{
+	top:50%;
+	left:55%;
+}
+.container1 .cont1 #hot-hip.rotated{
+left:40%;
+}
+.container1 .cont1 #hot-spine{
+	top:20%;
+	left:40%;
+
+}
+.container1 .cont1 #hot-spine.rotated{
+left:40%;
+}
+.container1 .cont1 #hot-hand{
+	top:25%;
+	left:5%;
+	-webkit-transition:all 0.5s ease-out;
+
+}
+.container1 .cont1 #hot-hand.rotated{
+	left:40%;
+	-webkit-transition:all 0.5s ease-in;
+}
+
+.container1 .popup {
+	/*position:relative;*/
+	position:relative;
+	overflow:hidden;
+	clip: rect(0 0 0 0);
+	visibility:visible;
+	width: 1px;
+	height:1px;
+	display: block;
+	background: rgba(60, 60, 60, 0.5);
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/popupbg.png");
+	color:rgba(0,0,0,0);
+	border-radius:10px;
+	z-index:4;
+    /*margin:10px auto 0 auto;*/
+    margin: 10px 40px 40px auto;
+	opacity:0;
+	padding:0;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+}
+
+.container1 .popup.active{
+	width:60%;
+	min-width:450px;
+	min-height:250px;
+	opacity:0.9;
+	padding:10px;
+   /* margin: 10px 10px 0 auto;*/
+       margin: 10px 40px 40px auto;
+   animation: slide 1s ease;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+   transition: all 0.5s ease-in;
+   -webkit-transition: all 0.5s ease-in;
+   -moz-transition: all 0.5s ease-in;
+   -o-transition: all 0.5s ease-in;
+}
+
+.container1 .popup .exit{
+	font-size:16px;
+	position:absolute;
+	height:30px;
+	width:30px;
+	right:10px;
+	padding: 40px auto auto 40px;
+	cursor:pointer;
+	background-image:url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/x.png');
+	background-size:80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.container1 .popup .exit:hover{
+	-webkit-transform:scale(1.1);
+}
+
+.container1 .popup .popup_contents{
+	text-align:left;
+	float:left;
+	opacity:0;
+	font-size:0.01px;
+	overflow:hidden;
+	width:1px;
+	height:1px;
+	padding:0;
+	transition: opacity 1s ease-in;
+	-webkit-transition: opacity 1s ease-in;
+  	-moz-transition: opacity 1s ease-in;
+   -o-transition: opacity 1s ease-in; 
+}
+
+.popup_contents .excerpt-div{
+	color: #76b4d6;
+	min-width:250px;
+	height:200px;
+	float:left;
+	font-size:15px;
+	margin:0 20px 0;
+	padding:0;
+}
+
+
+.popup_contents .thumbnaildiv{
+
+	width:100px;
+	padding:0;
+	margin:10px;
+	display:block;
+	float:left;
+}
+
+.container1 .popup .popup_contents.active{
+	font-size:15px;
+	opacity:1;
+	width:auto;
+	height:auto;
+    padding:0;
+    margin:0;
+	-webkit-transition: opacity 0.5s ease-in 0.5s;
+  	-moz-transition: opacity 0.5s ease-in 0.5s;
+ 	-o-transition: opacity 0.5s ease-in 0.5s;
+}
+
+.popup_contents h3{
+    margin:-10px auto 0px 10px;
+    float:left;
+}
+
+ .excerpt-div h3{
+    float:right;
+    margin-top:10px;
+}
+
+.cont1 .controlView{
+	margin-top:auto;
+	position:absolute;
+	z-index:10;
+	opacity:0.8;
+	bottom:20px;
+	width:100%;
+	height:30px;
+	text-align:center;
+	
+}
+
+.controlView .controlSelect{
+	position:relative;
+	float:left;
+	left:10px;
+	width:20px;
+	height:20px;
+	text-align:left;
+	margin:auto 12px auto 12px ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	cursor:pointer;
+	-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+}
+.controlSelect:hover{
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.cont1 .controlView .controlSelect#rotateSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/rot.png");
+}
+.cont1 .controlView .controlSelect#zoomoutSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/zoomout.png");
+}
+.cont1 .controlView .controlSelect#zoominSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/zoomin.png");
+}
+.cont1 .controlView .controlSelect#rotateSelect:hover{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/roth.png");
+}
+.cont1 .controlView .controlSelect#zoomoutSelect:hover{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/zoomouth.png");
+}
+.cont1 .controlView .controlSelect#zoominSelect:hover{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/zoominh.png");
+}
+
+.cont1 .controlView .panholder{
+	position:relative;
+	margin:0px 20px 0px 20px;
+	width:20px;
+	height:20px;
+	float:left;
+	bottom:10px;
+}
+.panButton{
+	margin:0px 0px 0px 0px !important;
+	padding:0px 0px 0px 0px;
+	position:absolute !important;
+	width:10px !important;
+	height:10px !important;
+	display: block;
+	overflow:hidden;
+	float:none;
+}
+#panupSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panup.png");
+	top:0px;
+	left:15px;
+}
+#panleftSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panleft.png");
+	left:0px;
+	top:15px;
+}
+#pandownSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/pandown.png");	
+	top:30px;
+	left:15px;
+}
+#panrightSelect{	
+	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panright.png");
+	left:30px;
+	top:15px;
+}
+#panupSelect:hover{	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panuph.png");}
+#panleftSelect:hover{	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panlefth.png");}
+#pandownSelect:hover{	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/pandownh.png");}
+#panrightSelect:hover{	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/04/panright.png");}
+
+
+
+
+/* Animations*/
+
+@-webkit-keyframes slide
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        -moz-transform: translateX(3px);
+        -o-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    
+    100%
+    {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+@keyframes slide
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+  
+    50%
+    {
+        -webkit-transform: translateX(-3px);
+        -moz-transform: translateX(-3px);
+        -o-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+    100%
+    {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein{
+from{ opacity: 0}
+to { opacity: 1}
+}
+
+
