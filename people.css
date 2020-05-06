@@ -5,20 +5,7 @@
   width:350px;
   float:left;
 }*/
-.postCatHeadline.active h2{
-  color:#2f6682;
-}
-.postCatNav{
-  width:100%;
-  display:block;
-  height:70px;
 
-}
-.postCatContainer{
-  float:none;
-  position:relative;
-  clear:both;
-}
 
 .excerpt{
   display:none;
@@ -52,3 +39,32 @@
   padding:10px;
 }
 
+.bio.field-item.full{
+  display:none !important;
+}
+
+.field-shell.field-shell-multiple>span.text-input{
+  float:left;
+}
+.field-shell.field-shell-multiple .field{
+  float:left;
+  margin:0 10px 0 10px;
+}
+.fn.n>a {
+  pointer-events:none;
+}
+.modal-footer>a{
+  display:none;
+}
+
+.span4>img{
+  display:none;
+}
+
+.modal-body{
+  overflow:hidden;
+}
+
+.modal-body{
+  overflow:hidden;
+}
