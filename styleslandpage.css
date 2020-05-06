@@ -27,7 +27,7 @@ a{
   overflow:hidden;
   text-align:left;
   float:left;
-  position:static;
+  position:relative;
   	
         
 }
@@ -132,8 +132,6 @@ a{
 	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
 }
 	
-
-
 #research-topics{
 top:-300px;
 background-color:rgba(255,255,255,0.7);
