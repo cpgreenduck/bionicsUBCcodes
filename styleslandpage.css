@@ -91,7 +91,7 @@ background-color:rgba(255,255,255,0.7);
 }
 
 #news{
-  width: calc(50% - 50px);
+  width: calc(50% - 40px);
   margin:0;
 }
 #news .postContainer{
@@ -99,7 +99,7 @@ background-color:rgba(255,255,255,0.7);
 	.aos-animate;
 }
 #members{
-  width: calc(50% - 50px);
+  width: calc(50% - 40px);
   margin:0;
 
 }
