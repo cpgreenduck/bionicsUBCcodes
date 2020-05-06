@@ -30,6 +30,9 @@ body,html{margin:0;padding:0;}
 
 }
 
+.parallax{
+	background-color:#000;
+}
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -45,7 +48,7 @@ body,html{margin:0;padding:0;}
   /*transform: translateZ(-1px) scale(1.5);*/
   background-attachment:fixed;
   /* Force the background image to fill the whole element. */
-  background-size: 1500px;
+  background-size: 150vh;
   background-repeat:no-repeat;
   background-position: center;
   /* Keep the image from overlapping sibling elements. */ 
