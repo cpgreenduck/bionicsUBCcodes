@@ -11,6 +11,7 @@
 	float:left;
 	border-radius:10px;
 	border:2px solid #c0c2c0;
+	max-height:400px;
 }
 
 .fadeclass{

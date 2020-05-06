@@ -153,10 +153,13 @@ background-color:rgba(255,255,255,0.7);
   width: calc(50% - 40px);
   margin:0;
   min-width:10px;
+  max-height:700px;
+  overflow:hidden;
 }
 #news .postContainer{
 	.aos-init;
 	.aos-animate;
+	max-height:200px;
 }
 
 
