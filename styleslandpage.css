@@ -27,7 +27,7 @@ a{
   overflow:hidden;
   text-align:left;
   float:left;
-  position:relative;
+  position:static;
   	
         
 }
