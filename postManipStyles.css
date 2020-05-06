@@ -5,11 +5,20 @@
 	display:block;
 	height:auto;
 	overflow:hidden;
-	
 	float:left;
 	border-radius:10px;
 	border:2px solid #c0c2c0;
 }
+
+.fadeclass{
+	float:left;
+	margin:20px;
+	background-color:#fff;
+	position:relative;
+	right:10px;
+	clear:both;
+	display:block;
+	}
 
 .postThumbnail{
 	width:150px;
