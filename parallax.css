@@ -20,7 +20,8 @@ body,html{margin:0;padding:0;}
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   /*height: 50vh;*/
-  height:30vh;
+  /*height:30vh;*/
+  height:500px;
   
   /* For text formatting. */
   display: flex;
