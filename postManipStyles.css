@@ -11,6 +11,8 @@
 }
 
 .fadeclass{
+	.aos_init;
+	.aos_animate;
 	float:left;
 	margin:20px;
 	background-color:#fff;
