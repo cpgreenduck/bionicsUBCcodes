@@ -21,7 +21,7 @@ body,html{margin:0;padding:0;}
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   /*height: 50vh;*/
   /*height:30vh;*/
-  height:500px;
+  height:300px;
   
   /* For text formatting. */
   display: flex;
@@ -59,9 +59,7 @@ body,html{margin:0;padding:0;}
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.section .bg1{
-	height:300px;
-}
+
 .bg1::after {
   background-image: url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spinalconnections3.png');
 }
