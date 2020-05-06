@@ -59,12 +59,12 @@
 
 .span4>img{
   display:none;
+}
+
+.modal-body{
+  overflow:hidden;
+}
+
+.modal-body{
+  overflow:hidden;
 }*/
-
-.modal-body{
-  overflow:hidden;
-}
-
-.modal-body{
-  overflow:hidden;
-}
