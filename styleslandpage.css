@@ -149,16 +149,14 @@ background-color:rgba(255,255,255,0.7);
 	transition: all 1s ease-in;
 }
 
-#news{
+#news, #members{
   width: calc(50% - 40px);
   margin:0;
+  min-width:300px;
 }
 #news .postContainer{
 	.aos-init;
 	.aos-animate;
 }
-#members{
-  width: calc(50% - 40px);
-  margin:0;
-}
+
 
