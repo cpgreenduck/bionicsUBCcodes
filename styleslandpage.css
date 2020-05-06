@@ -43,66 +43,7 @@ a{
 	padding:0;
 	margin:0;
 }
-#about{
-	.aos-init;
-	.aos-animate;
-	top:130px;
-	z-index:4;
-	width:100%;
-	border-style:solid;
-	border-width:2px;
-	background-color:#c2e3fc;
-	border-radius:10px;
-	border-color:#185685;
-	padding:20px;
-	padding-top:0px;
-	padding-bottom:0px;
-	opacity:0.9;
-	font-size:1.1em;
 
-
-}
-
-#accomplish{
-	text-align:center;
-	justify-content:center;
-	display:flex;
-	flex-wrap:wrap;
-}
-
-
-
-
-#research-topics{
-top:-300px;
-background-color:rgba(255,255,255,0.7);
-}
-
-#partners{
-	opacity:0.8;
-	top:90px;
-	transition: all 1s ease-out;
-	z-index:1;
-}
-#partners:hover{
-	background-color:#000;
-	transition: all 1s ease-in;
-	
-}
-
-#news{
-  width: calc(50% - 40px);
-  margin:0;
-}
-#news .postContainer{
-	.aos-init;
-	.aos-animate;
-}
-#members{
-  width: calc(50% - 40px);
-  margin:0;
-
-}
 
 #research-item-cont.centerdiv  {
 	.aos-init;
@@ -117,7 +58,6 @@ background-color:rgba(255,255,255,0.7);
 	justify-content:center;
 	display:flex;
 	flex-wrap:wrap;
-
 }
 .research-item{
 	.aos-init;
@@ -135,13 +75,6 @@ background-color:rgba(255,255,255,0.7);
 	-webkit-transition:all 1s ease;
 	padding:10px;
 	z-index:5;
-
-}
-#accomplish .research-item{
-	width:250px;
-	margin:20px;
-	
-
 }
 .research-item:hover{
 	transform:scale(1.1);
@@ -154,14 +87,44 @@ background-color:rgba(255,255,255,0.7);
 	height:80px;
 }
 
+#about{
+	.aos-init;
+	.aos-animate;
+	top:130px;
+	z-index:4;
+	width:100%;
+	border-style:solid;
+	border-width:2px;
+	background-color:#c2e3fc;
+	border-radius:10px;
+	border-color:#185685;
+	padding:20px;
+	padding-top:0px;
+	padding-bottom:0px;
+	opacity:0.9;
+	font-size:1.1em;
+}
+
+#accomplish{
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#accomplish .research-item{
+	width:30%;
+	margin:20px;
+}
+
 #accomplish .research-item:hover{
 	transform:scale(1.1);
 	-webkit-transition: all 1s ease;
 }
+/* In Accomplish*/
 #citations{
 	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
 }
-
 #funding{
 	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
 }
@@ -169,3 +132,34 @@ background-color:rgba(255,255,255,0.7);
 	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
 }
 	
+
+
+#research-topics{
+top:-300px;
+background-color:rgba(255,255,255,0.7);
+}
+
+#partners{
+	opacity:0.8;
+	top:90px;
+	transition: all 1s ease-out;
+	z-index:1;
+}
+#partners:hover{
+	background-color:#000;
+	transition: all 1s ease-in;
+}
+
+#news{
+  width: calc(50% - 40px);
+  margin:0;
+}
+#news .postContainer{
+	.aos-init;
+	.aos-animate;
+}
+#members{
+  width: calc(50% - 40px);
+  margin:0;
+}
+
