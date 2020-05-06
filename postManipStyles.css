@@ -13,13 +13,13 @@
 .fadeclass{
 	.aos_init;
 	.aos_animate;
-	float:left;
+/*	float:left;
 	margin:20px;
 	background-color:#fff;
 	position:relative;
 	right:10px;
 	clear:both;
-	display:block;
+	display:block;*/
 	}
 
 .postThumbnail{
