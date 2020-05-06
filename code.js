@@ -48,8 +48,11 @@ class activator{
 		console.log(ht);*/
 		this.xpos=this.hotspot.offsetLeft;
 		this.ypos=this.hotspot.offsetTop;
-		var xdisp=-(this.xpos-(wd/2))*2;
-		var ydisp=-(this.ypos-(ht/2))*2;
+		//var xdisp=-(this.xpos-(wd/2))*2;
+		//var ydisp=-(this.ypos-(ht/2))*2;
+		var ydisp=-(this.ypos-(ht/2))*2-50;
+		var xdisp=-(this.xpos-(wd/2))*2+100;
+
 		/*console.log(xdisp);
 		console.log(ydisp);*/
 		manCont.style.webkitTransform="translateX(" + xdisp.toString() + "px) translateY(" + ydisp.toString() + "px) scale(2)";
@@ -292,8 +295,10 @@ function enableWindowScroll(){
 //document.addEventListener("mouseout",function(){},{passive:false});
 
 man.addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();}, {passive:false});
-containMan.addEventListener("mouseenter",disableWindowScroll);
-containMan.addEventListener("mouseleave",enableWindowScroll);
+//containMan.addEventListener("mouseenter",disableWindowScroll);
+//containMan.addEventListener("mouseleave",enableWindowScroll);
+manCont.addEventListener("mouseenter",disableWindowScroll);
+manCont.addEventListener("mouseleave",enableWindowScroll);
 for (let step=0;step<hotspots.length;step++){
 	hotspots[step].addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();});
 	hotspots[step].addEventListener("mouseenter",disableWindowScroll);
