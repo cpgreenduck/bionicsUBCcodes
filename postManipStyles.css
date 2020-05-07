@@ -78,7 +78,7 @@
 
 
 .postCatContainer.expanded{
-	max-height:1000px;
+	/*max-height:1000px;*/
 	opacity:1;
 
 	transition: all 1s ease-in 0.5s;
