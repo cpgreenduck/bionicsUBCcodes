@@ -1,3 +1,12 @@
+.entry-meta{
+	display:none;
+}
+.post-byline{
+	display:none;
+}
+.navigation-links .pager{
+	display:none;
+}
 .page-id-1450 .page-title.entry-title{
   display:none;
 }
