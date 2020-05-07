@@ -63,7 +63,7 @@
 }
 .container1 h1:hover, .container1 h2:hover{
 	transition: all 1s ease-in;
-	-webkit-transform: translateX(30px) scale(1.05);
+	-webkit-transform: translateX(30px) scale(1.02);
 	-webkit-transition: background 1s ease-in;
 	-webkit-transition: transform 1s ease-in;
 }
