@@ -14,6 +14,10 @@
 	max-height:400px;
 }
 
+.descriptionContainer{
+	.postContainer;
+	border-style:none;
+}
 
 .fadeclass{
 	.aos_init;
