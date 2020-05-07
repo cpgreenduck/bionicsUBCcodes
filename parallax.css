@@ -65,6 +65,9 @@ body,html{margin:0;padding:0;}
   background-image: url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spinalconnections3.png');
 }
 
+.parallax .bg2{
+	height:600px;
+}
 .bg2::after {
 
   background-image: url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/GEARBETTER.png');
