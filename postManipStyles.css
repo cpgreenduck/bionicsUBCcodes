@@ -46,9 +46,16 @@
 	height:30px;
 	width:100%;
 	position:relative;
+	transition: all 1s ease-in;
+}
+.postCatHeadline:hover{
+	transform:scale(1.1);
+	transition: all 1s ease-out;
 }
 .postCatHeadline.active h2{
-  color:#2f6682;
+  background-color:	#c2e3fc;
+  transform: scale(1.1);
+  
 }
 
 .postCatContainer{
