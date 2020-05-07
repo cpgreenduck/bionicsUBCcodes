@@ -10,10 +10,10 @@
 }
 */
 
-.excerpt{
+.page-id-1917 .excerpt{
   display:none;
 }
-.excerpt .principal-investigator{
+.page-id-1917  .excerpt .principal-investigator{
   display:block !important;
 }
 .date{
@@ -28,7 +28,7 @@
 .iso-title{
   font-size:20px;
 }
-.boxey-inside{
+.page-id-1917 .boxey-inside{
   height:250px;
 }
 
@@ -36,13 +36,13 @@
   text-align:left;
   float:left;
 }
-.picture.field-item.one-third{
+.page-id-1917  .picture.field-item.one-third{
   width:200px !important;
   overflow:hidden;
   padding:10px;
 }
 
-.bio.field-item.full{
+.page-id-1917  .bio.field-item.full{
   display:none !important;
 }
 
@@ -60,15 +60,15 @@
   display:none;
 }
 
-.span4>img{
+.page-id-1917  .span4>img{
   display:none;
 }
 
-.modal-body{
+.page-id-1917 .modal-body{
   overflow:hidden;
 }
 
-.modal-body{
+.page-id-1917 .modal-body{
   overflow:hidden;
 }
 
