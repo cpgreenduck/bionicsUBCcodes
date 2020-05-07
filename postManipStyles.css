@@ -72,7 +72,7 @@
 	font-family:sans-serif;
 	overflow:hidden;
 	display:block;
-	max-height:1px;
+	height:1px;
 	opacity:0;
 	transition: all 0.5s ease-out;
 	float:none;
@@ -84,6 +84,7 @@
 .postCatContainer.expanded{
 	/*max-height:1000px;*/
 	opacity:1;
+	height:auto;
 
 	transition: all 1s ease-in 0.5s;
 	/*transform: translateX(0) translateY(0) scale(1);*/
