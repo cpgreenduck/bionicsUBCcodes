@@ -152,12 +152,17 @@ background-color:rgba(255,255,255,0.7);
 }
 
 #news, #members{
-  width: calc(50% - 40px);
   margin:0;
   min-width:10px;
-  max-height:700px;
+ /* max-height:700px;*/
   overflow:hidden;
   background-color:#fff;
+}
+#news{
+	width: calc(66% - 40px);
+}
+#members{
+	width: calc(34% - 40px);
 }
 #news .postContainer{
 	.aos-init;
