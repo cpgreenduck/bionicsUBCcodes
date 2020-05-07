@@ -62,7 +62,7 @@ body,html{margin:0;padding:0;}
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 
 .bg1::after {
-  background-image: url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/spinalconnections3.png');
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
 }
 
 .parallax .bg2{
@@ -70,7 +70,7 @@ body,html{margin:0;padding:0;}
 }
 .bg2::after {
 
-  background-image: url('http://apsc-mm.sites.olt.ubc.ca/files/2020/04/GEARBETTER.png');
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/GEARBETTER.png');
 }
 
 .bg3::after{
