@@ -49,12 +49,12 @@
 	transition: all 1s ease-in;
 }
 .postCatHeadline:hover{
-	transform:scale(1.1);
+	transform:scale(1.02);
 	transition: all 1s ease-out;
 }
 .postCatHeadline.active h2{
   color:	#c2e3fc;
-  transform: scale(1.1) translateX(30px);
+  transform: scale(1.02) translateX(30px);
   
 }
 
