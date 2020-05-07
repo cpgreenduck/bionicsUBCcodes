@@ -45,6 +45,7 @@
 	cursor:pointer;
 	height:auto;
 	width:auto;
+	max-width:450px;
 	float:left;
 	padding:20px;
 	overflow:hidden;
