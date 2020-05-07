@@ -53,8 +53,8 @@
 	transition: all 1s ease-out;
 }
 .postCatHeadline.active h2{
-  background-color:	#c2e3fc;
-  transform: scale(1.1);
+  color:	#c2e3fc;
+  transform: scale(1.1) translateX(30px);
   
 }
 
