@@ -11,6 +11,7 @@ class postCatActivator{
 		}
 		this.postCat.classList.add("expanded");
     	this.postCatHeadline.classList.add("active");
+    	AOS.init();
 	}
 		constructor(step,postCat,postCatHeadline){
 		this.index=step;
@@ -29,3 +30,6 @@ for (let step=0;step<postCats.length;step++){
 	postCatActivators[step]=new postCatActivator(step,postCats[step],postCatHeadlines[step]);
 
 }
+
+AOS.init();
+
