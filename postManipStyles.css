@@ -59,7 +59,7 @@
 
 .postCatHeadline{
 	cursor:pointer;
-	height:50px;
+	min-height:50px;
 	width:auto;
 	max-width:300px;
 	text-align:center;
