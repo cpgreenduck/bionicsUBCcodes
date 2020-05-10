@@ -59,7 +59,7 @@
 
 .postCatHeadline{
 	cursor:pointer;
-	height:auto;
+	height:50px;
 	width:auto;
 	max-width:300px;
 	text-align:center;
@@ -68,6 +68,11 @@
 	overflow:hidden;
 	position:relative;
 	transition: all 1s ease-in;
+	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/popupbgL.png');
+}
+.postCatHeadline h2{
+	line-height:30px;
+	margin:0;
 }
 .postCatHeadline:hover{
 	transform:scale(1.1) translateX(5px);
