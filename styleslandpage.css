@@ -4,6 +4,8 @@ p, h1, h2, h3, a{
 
 	color:#185685;
 	text-decoration:none;
+
+	-webkit-transition:all 1s ease-out;
 }
 
 a{
@@ -86,8 +88,8 @@ a{
 }
 
 .research-item img{
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 }
 
 #about{
