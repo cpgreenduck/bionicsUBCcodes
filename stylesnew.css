@@ -136,6 +136,7 @@
 }
 
 #loading{
+  overflow:hidden;
   display:block;
   opacity:1;
   position:absolute;
@@ -146,7 +147,6 @@
   -webkit-transition: opacity 1s ease-out, max-height 1s ease-out 1s;
   -o-transition: opacity 1s ease-out, max-height 1s ease-out 1s;
   transition: opacity 1s ease-out, max-height 1s ease-out 1s;
-
   text-align:center;
   -webkit-box-pack:center;
       -ms-flex-pack:center;
