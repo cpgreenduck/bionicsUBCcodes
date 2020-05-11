@@ -32,6 +32,12 @@ var ylim=ht/2;
 var transStep=0.3;
 var panStep=10;
 
+var container1=document.querySelector(".container1");
+var clickHover=document.querySelector("#clickHover");
+
+	
+
+
 class activator{
 	activate(){
 		for (let step1=0;step1<hotspots.length;step1++){
@@ -250,13 +256,26 @@ preloaderImg.addEventListener('load', (event) => {
   
 });
 
+/*Control Click Hover over man*/
+container1.addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
+	clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});
+container1.addEventListener("mouseleave",function(event){clickHover.style.opacity="1";
+	clickHover.style.zIndex="10";console.log("enter");clickHover.style.webkitTransform="scale(1)";});
+/*End ClickHover*/
+
+
+/*Activate hotspots*/
+
 for (let step=0;step<hotspots.length;step++){
 	activators[step]=new activator(step,hotspots[step],popupScreens[step]);
 	//console.log(activators[step]);
 /*hotspots[step].addEventListener("click",hotspotToggle);*/
 }
 
+/*Activates listener for popup exit*/
 exit.addEventListener("click",popUpToggle);
+
+/*Activates control buttons*/
 rotateSelect.addEventListener("click",rotateToggle);
 zoominSelect.addEventListener("click",zoomInToggle);
 zoomoutSelect.addEventListener("click",zoomOutToggle);
@@ -273,7 +292,7 @@ function preventDefault(e){
 	e.preventDefault();
 }
 
-/*setInterval(cycle,5000);*/
+/*Should check below for cross browser compatibility touch devices also*/
 
 var supportsPassive = false;
 try {
@@ -308,36 +327,13 @@ function enableWindowScroll(){
 //document.addEventListener("mouseout",function(){},{passive:false});
 
 man.addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();}, {passive:false});
-//containMan.addEventListener("mouseenter",disableWindowScroll);
-//containMan.addEventListener("mouseleave",enableWindowScroll);
 manCont.addEventListener("mouseenter",disableWindowScroll);
 manCont.addEventListener("mouseleave",enableWindowScroll);
 for (let step=0;step<hotspots.length;step++){
 	hotspots[step].addEventListener("wheel",function(event){ if(event.deltaY<0) zoomInToggle(); else if(event.deltaY>0) zoomOutToggle();});
 	hotspots[step].addEventListener("mouseenter",disableWindowScroll);
-//	hotspots[step].addEventListener("mouseout",enableWindowScroll);
 }
 
 
-/*
-man.addEventListener("mouseover",function (event)
-{ 
-	console.log("mouseenter");
-    // Get the current page scroll position 
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
-  
-        // if any scroll is attempted, set this to the previous value 
-        window.onscroll = function() { 
-            window.scrollTo(scrollLeft, scrollTop); 
-             console.log("reset");
-        }; 
-} );
 
-man.addEventListener("mouseout", function (event) { 
-    window.onscroll = function() {}; console.log("mouseout");/*alert("mouseout");    } );*/
-
-
-
-//add something here about reading in content from articles on each item
 
