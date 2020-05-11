@@ -114,6 +114,15 @@ z-index:10;
 -o-transition:all 1s ease-out;
 transition:all 1s ease-out;
 }
+.container1 #loading{
+	position:absolute;
+	background-image:url('https://media2.govtech.com/images/940*712/SHUTTERSTOCK_LOADING_SYMBOL_BROADBAND_INTERNET_SPEED.jpg');
+	background-repeat:no-repeat;
+	background-size:20%;
+	height:50px;
+	width:50px;
+	transition:all 1s ease-out;
+}
 .container1 .cont1{
 	overflow:visible;
 	position:absolute;
@@ -504,16 +513,16 @@ left:40%;
 
 @-webkit-keyframes slide
 {
-    15%
+    20%
     {
         -webkit-transform: translateX(5px);
                 transform: translateX(5px);
     }
   
-    50%
+    80%
     {
-        -webkit-transform: translateX(3px);
-                transform: translateX(3px);
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
     }
 
     100%
@@ -533,8 +542,8 @@ left:40%;
   
     50%
     {
-        -webkit-transform: translateX(3px);
-                transform: translateX(3px);
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
     }
 
     100%
