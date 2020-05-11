@@ -51,8 +51,8 @@ a{
 	transition: all 1s ease-out;
 }
 .postCatHeadline h2{
-	line-height:20px;
-	font-size:20px;
+	line-height:24px;
+	font-size:24px;
 	margin:0;
 }
 .postCatHeadline:hover{
