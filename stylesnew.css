@@ -114,15 +114,49 @@ z-index:10;
 -o-transition:all 1s ease-out;
 transition:all 1s ease-out;
 }
-.container1 #loading{
-	position:absolute;
-	background-image:url('https://media2.govtech.com/images/940*712/SHUTTERSTOCK_LOADING_SYMBOL_BROADBAND_INTERNET_SPEED.jpg');
-	background-repeat:no-repeat;
-	background-size:20%;
-	height:50px;
-	width:50px;
-	transition:all 1s ease-out;
+
+
+.bg-lazy {
+  /*height: 100vh;
+  width: 100vw;*/
+  transition: opacity 1s ease-out;
 }
+
+.bg-loading {
+  opacity: 0;
+  transition:opacity 1s ease-in;
+}
+
+#loading{
+  display:block;
+  visibility:visible;
+  opacity:1;
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:#fff;
+  z-index:100;
+  transition: opacity 1s ease-out;
+  transition: visibility 1s ease-out 1s;
+  text-align:center;
+  justify-content:center;
+}
+#loading>h1{
+  margin:auto;
+  animation: slide 2s ease;
+  animation-iteration-count:100;
+  font-size:40px;
+  opacity:0.3;
+  top:45%;
+  left:40%;
+}
+#loading.inactive{
+  opacity:0;
+  visibility:hidden;
+  transition: opacity 1s ease-in;
+  transition: visibility 1s ease-in 1s;
+}
+
 .container1 .cont1{
 	overflow:visible;
 	position:absolute;
