@@ -237,7 +237,7 @@
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
 	transition:transform 0.5s steps(24);*/
-	transition: all 0.5s steps(24);
+	transition: all 0.1s step-end, transform 0.5s steps(24);
 }
 
 .container1 #man-pic.rotated {
@@ -249,7 +249,7 @@
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
 	transition:transform 0.5s steps(24);*/
-	transition: all 0.5s steps(24);
+	transition: all 0.1s step-end, transform 0.5s steps(24);
 }
 
 .container1 .hotspot{
