@@ -57,16 +57,17 @@ a{
 	font-family:sans-serif;
 	overflow:hidden;
 	display:block;
-	height:1px;
+	/*height:1px;*/
+	max-height:1px;
 	opacity:0;
 	transition: all 0.5s ease-out;
 	float:none;
 	clear:both;
 }
 .postCatContainer.expanded{
-	/*max-height:1000px;*/
+	max-height:5000px;
 	opacity:1;
-	height:auto;
+	/*height:auto;*/
 	transition: all 1s ease-in 0.5s;
 }
 
