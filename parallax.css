@@ -76,4 +76,52 @@ body,html{margin:0;padding:0;}
 .bg3::after{
 	background-image:url('http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg');
 	}
+
+
+
+.static_par_0ht{
+	height:0px !important;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.section.parallax.bg1 {
+	height:1000px;
+	width:100%;
+	background-size:100%;
+	background-repeat:repeat-y;
+}
+.parallax::after{
+background-repeat:repeat-y;
+}
+
+.section.parallax.bg2{
+	height:800px;
+	width:100%;
+	}
+	
+.section.parallax.bg3{
+	width:100%;
+	}
+
+.bg1::after{
+background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png');
+}
+
+.section.static.static_par_0ht{
+display:block;
+padding:0;
+margin:0;
+height:0;
+}
+
+.bg3{
+	height:1000px;
+}
+.bg3::after{
+	background-position:bottom;
+	}
+	
+	.bg3::after{
+background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
 }

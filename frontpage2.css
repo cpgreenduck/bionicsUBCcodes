@@ -1,106 +1,5 @@
 @import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
-#about{
-	width:100%;
-	clear:both;
-	border-radius:0px;
-	background-color:rgba(31,31,79,0.8);
-	font-color:white;
-	font-size:30px;
-	border-width:0px;
-	top:50px;
-	float:none;
-	display:block;
-}
-#about h4{
-font-size:25px;
-}
-.frontpage-item>h1{
-	color:#000;
-	opacity:0.6;
-	font-size:40px;
-	margin:20px;
-	font-weight:bolder;
-}
 
-
-
-.frontpage-item.heading{
-	min-height:30px;
-	height:70px;
-	padding:0 !important;
-	margin:0 !important;
-	-webkit-transition:all 1s ease-out;
-	background-color:transparent;
-	min-width:300px;
-}
-.frontpage-item.heading:hover{
-	transform:scale(1.1);
-	-webkit-transition: all 1s ease-in;
-}
-.frontpage-item.desc{
-	padding:10px;
-	min-height:50px;
-}
-	
-.frontpage-item>h2{
-	font-size:32px;
-	margin:20px;
-	font-weight:bolder;
-	opacity:0.6;
-}
-
-.frontpage-item>h3{
-	color:#000;
-	font-weight:normal;
-	opacity:0.6;
-}
-	
-
-#about a, #about h3, #about h4{
-	color:#fff;
-	font-size:20px;
-}
-
-.container1{
-	width:80%;
-	clear:both;
-	position:relative;
-	margin-top:0;
-	margin-left:auto;
-	margin-right:auto;
-	float:none;
-	display:block;
-}
-
-.section.parallax.bg1 {
-	height:1000px;
-	width:100%;
-	background-size:100%;
-	background-repeat:repeat-y;
-}
-.parallax::after{
-background-repeat:repeat-y;
-}
-
-.section.parallax.bg2{
-	height:800px;
-	width:100%;
-	}
-	
-.section.parallax.bg3{
-	width:100%;
-	}
-
-.bg1::after{
-background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png');
-}
-
-.section.static.static_par_0ht{
-display:block;
-padding:0;
-margin:0;
-height:0;
-}
 .logo{
 	top:150px;
 	overflow:hidden;
@@ -116,6 +15,39 @@ height:0;
 	background-repeat:no-repeat;
 	background-position:center;
 }
+
+#about{
+	.aos-init;
+	.aos-animate;
+	width:100%;
+	clear:both;
+	border-radius:0px;
+	background-color:rgba(31,31,79,0.8);
+	font-color:white;
+	border-width:0px;
+	top:50px;
+	float:none;
+	display:block;
+	z-index:4;
+	padding:0 20px 0 20px;
+	opacity:0.9;
+}
+#about h4{
+	font-size:25px;
+	color:#fff;
+}
+
+/*Put in stylesnew.css*/
+.container1{
+	width:80%;
+	clear:both;
+	position:relative;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	display:block;
+}
 #clickHover{
 position:absolute;
 background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/hoverman.png');
@@ -129,6 +61,26 @@ left:0px;
 z-index:10;
 transition:all 1s ease-out;
 }
+/* End stylesnew.css*/
+
+
+/*Styles Research/Accomplish */
+#accomplish{
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#accomplish .research-item{
+	width:300px;
+	margin:20px;
+}
+
+#accomplish .research-item:hover{
+	transform:scale(1.1);
+	-webkit-transition: all 1s ease;
+}
 
 #research-item-cont{
 clear:both;
@@ -137,14 +89,22 @@ width:90% !important;
 margin-left:0;
 margin-right:0;
 }
-
-.research-item{
-width:100px !important;
-margin:10px !important;
-padding:0 !important;
-max-height:150px !important;
+#research-item-cont.centerdiv  {
+	.aos-init;
+	.aos-animate;
+	animation: slide 1s ease;
+	margin:auto;
+	width:80%;
+	positive:relative;
+	overflow:hidden;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
 }
 
+/*News and Research highlights*/
 #research{
 	margin-top:-800px;
 	opacity:1;
@@ -152,7 +112,6 @@ max-height:150px !important;
 	overflow:hidden;
 	max-height:650px;
 }
-
 .hilite{
 	width:45%;
 	margin:20px;
@@ -160,7 +119,6 @@ max-height:150px !important;
 	text-align:center;
 	min-width:400px;
 }
-
 .hilite .postContainer{
 	background-color:#fff;
 	min-height:80px;
@@ -171,9 +129,7 @@ max-height:150px !important;
 }
 
 
-.bg3::after{
-background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
-}
+
 
 #teamimg{
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
@@ -207,12 +163,7 @@ background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.
 	transform:scale(1.1);
 	transition:all 1s ease-in;
 }
-.bg3{
-	height:1000px;
-}
-.bg3::after{
-	background-position:bottom;
-	}
+
 #partnerslabel, #workwithus{
 	background-color:rgba(31,31,79,0.8);
 	margin-top:-1000px;
