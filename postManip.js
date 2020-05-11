@@ -33,3 +33,22 @@ for (let step=0;step<postCats.length;step++){
 
 AOS.init();
 
+function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
+}
+var v1=getQueryVariable("activate");
+var n1=parseInt(v1);
+console.log(n1);
+window.onload=function(){
+	console.log(v1);
+	if (n1&&postCatActivators[n1]) { //if id not empty
+		postCatActivators[n1].activate();
+	}
+}
