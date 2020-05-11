@@ -151,7 +151,7 @@ transition:all 1s ease-out;
 }
 #loading.inactive{
   opacity:0;
-  height:0;
+  height:0%;
   transition: opacity 1s ease-in;
   transition: height 1s ease-in 1s;
 }
@@ -567,13 +567,13 @@ left:40%;
 
 @keyframes slide
 {
-    15%
+    20%
     {
         -webkit-transform: translateX(5px);
                 transform: translateX(5px);
     }
   
-    50%
+    80%
     {
         -webkit-transform: translateX(-5px);
                 transform: translateX(-5px);
