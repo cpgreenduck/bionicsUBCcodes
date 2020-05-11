@@ -23,16 +23,6 @@ class postCatActivator{
 	}
 }
 
-
-
-
-for (let step=0;step<postCats.length;step++){
-	postCatActivators[step]=new postCatActivator(step,postCats[step],postCatHeadlines[step]);
-
-}
-
-AOS.init();
-
 function getQueryVariable(variable)
 {
     var query = window.location.search.substring(1);
@@ -43,6 +33,11 @@ function getQueryVariable(variable)
     }
     return(false);
 }
+
+for (let step=0;step<postCats.length;step++){
+	postCatActivators[step]=new postCatActivator(step,postCats[step],postCatHeadlines[step]);
+
+}
 var v1=getQueryVariable("activate");
 var n1=parseInt(v1);
 console.log(n1);
@@ -51,4 +46,8 @@ window.onload=function(){
 	if (n1&&postCatActivators[n1]) { //if id not empty
 		postCatActivators[n1].activate();
 	}
+	else{
+		postCatActivators[0].activate();
+	}
 }
+AOS.init();
