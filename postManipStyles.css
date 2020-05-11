@@ -1,3 +1,16 @@
+p, h1, h2, h3, h4, a{
+	font-family:sans-serif;
+	color:#185685;
+	text-decoration:none;
+	-webkit-transition:all 1s ease-out;
+}
+a{
+	color:#002145;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+
 .entry-meta{
 	display:none;
 }
