@@ -233,10 +233,11 @@
 	background-position:left;
 	/*padding:0.1em;*/
 	background-repeat: no-repeat;
-	-webkit-transition:-webkit-transform 0.5s steps(24);
+	/*-webkit-transition:-webkit-transform 0.5s steps(24);
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
-	transition:transform 0.5s steps(24);
+	transition:transform 0.5s steps(24);*/
+	transition: all 0.5s steps(24);
 }
 
 .container1 #man-pic.rotated {
@@ -244,10 +245,11 @@
 	-webkit-transform:translateX(-5400px);
 	    -ms-transform:translateX(-5400px);
 	        transform:translateX(-5400px);
-	-webkit-transition:-webkit-transform 0.5s steps(24);
+	/*-webkit-transition:-webkit-transform 0.5s steps(24);
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
-	transition:transform 0.5s steps(24);
+	transition:transform 0.5s steps(24);*/
+	transition: all 0.5s steps(24);
 }
 
 .container1 .hotspot{
