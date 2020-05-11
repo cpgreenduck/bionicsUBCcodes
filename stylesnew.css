@@ -237,19 +237,21 @@
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
 	transition:transform 0.5s steps(24);*/
-	transition: all 0.1s step-end, transform 0.5s steps(24);
+	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
+	animation: manunrot 0.5s steps(24);
 }
 
 .container1 #man-pic.rotated {
-	background-position:right;
-	-webkit-transform:translateX(-5400px);
+	/*background-position:right;
+	/*-webkit-transform:translateX(-5400px);
 	    -ms-transform:translateX(-5400px);
 	        transform:translateX(-5400px);
 	/*-webkit-transition:-webkit-transform 0.5s steps(24);
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
 	transition:transform 0.5s steps(24);*/
-	transition: all 0.1s step-end, transform 0.5s steps(24);
+	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
+	animation: manrot 0.5s steps(24);
 }
 
 .container1 .hotspot{
@@ -687,4 +689,12 @@ to { opacity: 1}
 @keyframes fadein{
 from{ opacity: 0}
 to { opacity: 1}
+}
+@keyframes manrot{
+	from{ transform:translateX(0)}
+	to{ transform: translateX(-5400px)}
+}
+@keyframes manunrot{
+	from{ transform:translateX(0)}
+	to{ transform: translateX(-5400px)}
 }
