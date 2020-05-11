@@ -155,8 +155,8 @@
 }
 #loading>h1{
   margin:auto;
-  -webkit-animation: bounce 2s ease;
-          animation: bounce 2s ease;
+  -webkit-animation: bounce 1s ease;
+          animation: bounce 1s ease;
   -webkit-animation-iteration-count:infinite;
           animation-iteration-count:infinite;
   font-size:40px;
