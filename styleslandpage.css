@@ -17,19 +17,6 @@
 	float:left;
 	position:relative;       
 }
-.frontpage-item>h1, .frontpage-item>h2{
-  text-align:center;
-  font-size:1.2em;
-  padding:0;
-  margin:0;
-}
-.frontpage-item>h1{
-	color:#000;
-	opacity:0.6;
-	font-size:40px;
-	margin:20px;
-	font-weight:bolder;
-}
 .frontpage-item.heading{
 	min-height:30px;
 	height:70px;
@@ -39,19 +26,6 @@
 	background-color:transparent;
 	min-width:300px;
 }
-.frontpage-item>h2{
-	font-size:32px;
-	margin:20px;
-	font-weight:bolder;
-	opacity:0.6;
-}
-
-.frontpage-item>h3{
-	color:#000;
-	font-weight:normal;
-	opacity:0.6;
-}
-
 .frontpage-item.heading:hover{
 	transform:scale(1.1);
 	-webkit-transition: all 1s ease-in;
@@ -59,6 +33,24 @@
 .frontpage-item.desc{
 	padding:10px;
 	min-height:50px;
+}
+.frontpage-item>h1, .frontpage-item>h2, .frontpage-item>h3{
+  text-align:center;
+  padding:0;
+  margin:20px;
+  font-weight:bolder;
+  opacity:0.6;
+}
+.frontpage-item>h1{
+	color:#000;
+	font-size:40px;
+}
+.frontpage-item>h2{
+	font-size:32px;
+}
+.frontpage-item>h3{
+	color:#000;
+	font-weight:normal;
 }
 
 /*Research item styles*/
@@ -87,6 +79,8 @@
 .research-item h4{
   margin-top:0;
   padding-top:0;
+  color:#000;
+  opacity:0.6;
 }
 
 
