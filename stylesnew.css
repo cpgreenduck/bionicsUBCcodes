@@ -129,7 +129,6 @@ transition:all 1s ease-out;
 
 #loading{
   display:block;
-  visibility:visible;
   opacity:1;
   position:absolute;
   height:100%;
@@ -137,7 +136,7 @@ transition:all 1s ease-out;
   background-color:#fff;
   z-index:100;
   transition: opacity 1s ease-out;
-  transition: visibility 1s ease-out 1s;
+  transition: height 1s ease-out 1s;
   text-align:center;
   justify-content:center;
 }
@@ -152,9 +151,9 @@ transition:all 1s ease-out;
 }
 #loading.inactive{
   opacity:0;
-  visibility:hidden;
+  height:0;
   transition: opacity 1s ease-in;
-  transition: visibility 1s ease-in 1s;
+  transition: height 1s ease-in 1s;
 }
 
 .container1 .cont1{
