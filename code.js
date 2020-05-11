@@ -239,6 +239,7 @@ function cycle(){
 
 
 
+
 for (let step=0;step<hotspots.length;step++){
 	activators[step]=new activator(step,hotspots[step],popupScreens[step]);
 	//console.log(activators[step]);

@@ -43,11 +43,13 @@ var n1=parseInt(v1);
 console.log(n1);
 window.onload=function(){
 	console.log(v1);
-	if (n1&&postCatActivators[n1]) { //if id not empty
-		postCatActivators[n1].activate();
-	}
-	else{
-		postCatActivators[0].activate();
+	if(postCatActivators[0]){
+		if (n1&&postCatActivators[n1]) { //if id not empty
+			postCatActivators[n1].activate();
+		}
+		else{
+			postCatActivators[0].activate();
+		}
 	}
 };
 AOS.init();
