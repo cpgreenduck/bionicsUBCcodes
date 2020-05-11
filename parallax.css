@@ -50,7 +50,7 @@ body,html{margin:0;padding:0;}
 .section.parallax.bg2{
 	height:800px;
 }
-.parallax .bg3{
+.section.parallax.bg3{
 	height:1000px;
 }
 .parallax::after {
