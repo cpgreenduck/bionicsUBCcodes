@@ -146,9 +146,9 @@
   -webkit-transition: opacity 1s ease-out;
   -o-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
-  -webkit-transition: height 1s ease-out 1s;
-  -o-transition: height 1s ease-out 1s;
-  transition: height 1s ease-out 1s;
+  -webkit-transition: max-height 1s ease-out 1s;
+  -o-transition: max-height 1s ease-out 1s;
+  transition: max-height 1s ease-out 1s;
   text-align:center;
   -webkit-box-pack:center;
       -ms-flex-pack:center;
@@ -170,9 +170,9 @@
   -webkit-transition: opacity 1s ease-in;
   -o-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
-  -webkit-transition: height 1s ease-in 1s;
-  -o-transition: height 1s ease-in 1s;
-  transition: height 1s ease-in 1s;
+  -webkit-transition: max-height 1s ease-in 1s;
+  -o-transition: max-height 1s ease-in 1s;
+  transition: max-height 1s ease-in 1s;
 }
 
 .container1 .cont1{
