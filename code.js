@@ -235,10 +235,20 @@ function cycle(){
  }
 }*/
 
+const imageUrl = "http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/outputL.png";
+let bgElement = document.querySelector(".bg-lazy");
+let loadingElement=document.querySelector("#loading");
+bgElement.classList.add("bg-loading");
+let preloaderImg = document.createElement("img");
+preloaderImg.src = imageUrl;
 
-
-
-
+preloaderImg.addEventListener('load', (event) => {
+  bgElement.classList.remove("bg-loading");
+  bgElement.style.backgroundImage = `url(${imageUrl})`;
+  preloaderImg = null;
+  loadingElement.classList.add("inactive");
+  
+});
 
 for (let step=0;step<hotspots.length;step++){
 	activators[step]=new activator(step,hotspots[step],popupScreens[step]);
