@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var postCats=document.querySelectorAll(".postCatContainer");
 var postCatHeadlines=document.querySelectorAll(".postCatHeadline");
 var postCatActivators=[];
@@ -48,5 +49,5 @@ window.onload=function(){
 	else{
 		postCatActivators[0].activate();
 	}
-}
+};
 AOS.init();

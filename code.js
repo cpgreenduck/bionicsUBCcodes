@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /* ID's interactive objects*/
 var activators=[];
 var panners=[];
@@ -8,6 +9,7 @@ var panButtons=document.querySelectorAll(".panButton");
 var exit=document.querySelector(".exit");
 var rotateSelect=document.querySelector("#rotateSelect");
 var zoominSelect=document.querySelector("#zoominSelect");
+var zoomoutSelect=document.querySelector("#zoomoutSelect");
 var man=document.querySelector("#man-pic");
 var manCont=document.querySelector("#man");
 var containMan=document.querySelector("#containMan");
