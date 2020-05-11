@@ -14,7 +14,6 @@ body,html{margin:0;padding:0;}
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px;
 }
-
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
@@ -22,15 +21,38 @@ body,html{margin:0;padding:0;}
   /*height: 50vh;*/
   /*height:30vh;*/
   height:300px;
-  
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
+/* The styling for the static div. */
+.static {
+	height:auto;
+	background-color:rgba(0,0,0,0);
+}
+.static_par_0ht{
+	height:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:block;
+}
 
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.parallax{
+	width:100%;
+}
+.parallax .bg1 {
+	height:1000px;
+}
+.parallax .bg2{
+	height:800px;
+}
+.parallax .bg3{
+	height:1000px;
+}
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -39,7 +61,6 @@ body,html{margin:0;padding:0;}
   right: 0;
   bottom: 0;
   left: 0;
-  
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
@@ -47,81 +68,26 @@ body,html{margin:0;padding:0;}
   background-attachment:fixed;
   /* Force the background image to fill the whole element. */
   background-size: 200vh;
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   background-position: center;
   /* Keep the image from overlapping sibling elements. */ 
   z-index: -1;
 }
-
-/* The styling for the static div. */
-.static {
-	height:auto;
-	background-color:rgba(0,0,0,0);
-}
-
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-
 .bg1::after {
   background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spinalconnections3.png');
 }
 
-.parallax .bg2{
-	height:700px;
-}
-.bg2::after {
-
-  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
-}
-
-.bg3::after{
-	background-image:url('http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg');
-	}
-
-
-
-.static_par_0ht{
-	height:0px !important;
-	width:100%;
-	padding:0;
-	margin:0;
-}
-.section.parallax.bg1 {
-	height:1000px;
-	width:100%;
-	background-size:100%;
-	background-repeat:repeat-y;
-}
-.parallax::after{
-background-repeat:repeat-y;
-}
-
-.section.parallax.bg2{
-	height:800px;
-	width:100%;
-	}
-	
-.section.parallax.bg3{
-	width:100%;
-	}
-
 .bg1::after{
 background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png');
 }
-
-.section.static.static_par_0ht{
-display:block;
-padding:0;
-margin:0;
-height:0;
-}
-
-.bg3{
-	height:1000px;
+.bg2::after {
+  background-image: url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/gear2.png');
 }
 .bg3::after{
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
 	background-position:bottom;
-	}
-	
-	.bg3::after{
-background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/spine2.png");
 }
+
+
+	
+
