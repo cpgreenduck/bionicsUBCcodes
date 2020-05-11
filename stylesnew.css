@@ -237,7 +237,6 @@
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
 	transition:transform 0.5s steps(24);
-	transition:transform 0.5s steps(24), -webkit-transform 0.5s steps(24);
 }
 
 .container1 #man-pic.rotated {
@@ -248,9 +247,6 @@
 	-webkit-transition:-webkit-transform 0.5s steps(24);
 	transition:-webkit-transform 0.5s steps(24);
 	-o-transition:transform 0.5s steps(24);
-	transition:transform 0.5s steps(24);
-	transition:transform 0.5s steps(24), -webkit-transform 0.5s steps(24);
-	transform:translateX(-5400px);
 	transition:transform 0.5s steps(24);
 }
 

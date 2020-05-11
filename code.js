@@ -59,7 +59,7 @@ class activator{
 		//var xdisp=-(this.xpos-(wd/2))*2;
 		//var ydisp=-(this.ypos-(ht/2))*2;
 		var ydisp=-(this.ypos-(ht/2))*2-50;
-		var xdisp=-(this.xpos-(wd/2))*2+100;
+		var xdisp=-(this.xpos-(wd/2))*2+200;
 
 		/*console.log(xdisp);
 		console.log(ydisp);*/
