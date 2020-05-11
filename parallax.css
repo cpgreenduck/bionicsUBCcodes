@@ -44,7 +44,7 @@ body,html{margin:0;padding:0;}
 .parallax{
 	width:100%;
 }
-.parallax .bg1 {
+.section.parallax.bg1 {
 	height:1000px;
 }
 .parallax .bg2{

@@ -91,7 +91,7 @@
 /*Team Styles*/
 #teamimg{
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
-	height:100px;
+	max-height:100px;
 	transition:all 1s ease-out;
 }
 #teamimg .frontpage-item.heading{
