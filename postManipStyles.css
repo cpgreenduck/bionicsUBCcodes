@@ -83,6 +83,7 @@ a{
 	transition: all 0.5s ease-out;
 	float:none;
 	clear:both;
+	padding-bottom:40px;
 }
 .postCatContainer.expanded{
 	max-height:10000px;
