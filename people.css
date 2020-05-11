@@ -84,4 +84,10 @@
 .page-id-1917 .modal-body, .page-id-1921 .modal-body{
   overflow:hidden;
 }
-
+.specialization.field-item.full{
+	width:100%;
+}
+.specialization.text-shell{
+	float:left;
+	margin-right:30px;
+}
