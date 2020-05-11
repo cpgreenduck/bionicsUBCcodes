@@ -63,14 +63,15 @@
 	margin:10px;
 	text-align:center;
 	float:left;
-	-webkit-transition:all 1s ease;
+	transform:scale(1);
+	-webkit-transition:all 1s ease-out;
 	padding:0;
-	z-index:5;
+	z-index:100;
 }
 .research-item:hover{
 	transform:scale(1.1);
-	-webkit-transition: all 1s ease;
-	z-index:10;
+	-webkit-transition: all 1s ease-in;
+	z-index:100;
 }
 .research-item img{
 	width:70px;
