@@ -239,6 +239,7 @@
 	transition:transform 0.5s steps(24);*/
 	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
 	animation: manunrot 0.5s steps(24);
+	transform:translateX(0px);
 }
 
 .container1 #man-pic.rotated {
@@ -252,6 +253,8 @@
 	transition:transform 0.5s steps(24);*/
 	/*transition: background-position 0.1s step-end, transform 0.5s steps(24);*/
 	animation: manrot 0.5s steps(24);
+	transform:translateX(-5400px);
+	
 }
 
 .container1 .hotspot{
