@@ -15,7 +15,6 @@
 	background-repeat:no-repeat;
 	background-position:center;
 }
-
 #about{
 	.aos-init;
 	.aos-animate;
@@ -37,32 +36,11 @@
 	color:#fff;
 }
 
-/*Put in stylesnew.css*/
+/*Changes to man.css*/
 .container1{
 	width:80%;
-	clear:both;
-	position:relative;
-	margin-top:0;
-	margin-left:auto;
-	margin-right:auto;
-	float:none;
-	display:block;
 }
-#clickHover{
-position:absolute;
-background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/hoverman.png');
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
-height:650px;
-width:100%;
-top:0px;
-left:0px;
-z-index:10;
-transition:all 1s ease-out;
-}
-/* End stylesnew.css*/
-
+/* End changes to man stylesnew.css*/
 
 /*Styles Research/Accomplish */
 #accomplish{
@@ -72,36 +50,19 @@ transition:all 1s ease-out;
 	flex-wrap:wrap;
 }
 
-#accomplish .research-item{
-	width:300px;
-	margin:20px;
-}
-
-#accomplish .research-item:hover{
-	transform:scale(1.1);
-	-webkit-transition: all 1s ease;
-}
-
 #research-item-cont{
-clear:both;
-position:relative;
-width:90% !important;
-margin-left:0;
-margin-right:0;
-}
-#research-item-cont.centerdiv  {
 	.aos-init;
 	.aos-animate;
-	animation: slide 1s ease;
-	margin:auto;
-	width:80%;
-	positive:relative;
+	clear:both;
+	position:relative;
+	width:90%;
+	margin:auto 0 auto 0;
 	overflow:hidden;
 	align-items:center;
 	text-align:center;
 	justify-content:center;
 	display:flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 }
 
 /*News and Research highlights*/
@@ -109,7 +70,6 @@ margin-right:0;
 	margin-top:-800px;
 	opacity:1;
 	background-color:rgba(255,255,255,0.8);
-	overflow:hidden;
 	max-height:650px;
 }
 .hilite{
@@ -128,28 +88,11 @@ margin-right:0;
 	min-width:400px;
 }
 
-
-
-
+/*Team Styles*/
 #teamimg{
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
 	height:100px;
 	transition:all 1s ease-out;
-}
-#partnersmapCont{
-	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
-	min-height:500px;
-	background-size:800px;
-	margin-top:-850px;
-	background-color:transparent;
-	z-index=-1;
-	overflow:hidden;
-	background-repeat:no-repeat;
-	background-position:center;
-	position:relative;
-	margin-left:0;
-	margin-right:0;
-	padding:0;
 }
 #teamimg .frontpage-item.heading{
 	color:#fff;
@@ -163,6 +106,19 @@ margin-right:0;
 	transform:scale(1.1);
 	transition:all 1s ease-in;
 }
+
+/*Partners Styles*/
+#partnersmapCont{
+	min-height:500px;
+	background-size:800px;
+	margin-top:-850px;
+	background-color:transparent;
+	z-index=-1;
+	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
 
 #partnerslabel, #workwithus{
 	background-color:rgba(31,31,79,0.8);
