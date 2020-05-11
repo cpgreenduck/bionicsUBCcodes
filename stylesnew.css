@@ -165,6 +165,7 @@
 }
 #loading.inactive{
   opacity:0;
+  max-height:0%;
   -webkit-transition: opacity 1s ease-in, max-height 1s ease-in 1s;
   -o-transition: opacity 1s ease-in, max-height 1s ease-in 1s;
   transition: opacity 1s ease-in, max-height 1s ease-in 1s;
