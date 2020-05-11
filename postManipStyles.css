@@ -27,6 +27,8 @@ a{
 .postCatHeadline{
 	cursor:pointer;
 	min-height:60px;
+	border-radius:10px;
+	margin-right:10px;
 	width:auto;
 	max-width:300px;
 	text-align:center;
