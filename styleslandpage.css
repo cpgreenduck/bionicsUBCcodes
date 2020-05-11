@@ -69,7 +69,7 @@
 	z-index:100;
 }
 
-.research-item.aos-init.aos-animate{
+.research-item.aos-init.aos-animate:hover{
 	transform: scale(1.1);
 	-webkit-transition: all 1s ease-in;
 	z-index:100;
