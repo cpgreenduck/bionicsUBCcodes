@@ -76,10 +76,10 @@ a{
 .research-item{
 	.aos-init;
 	.aos-animate;
-	width:300px;
+	width:100px;
 	max-height:150px;
 	/*height:120px;*/
-	margin:20px;
+	margin:10px;
 	text-align:center;
 	float:left;
 	-webkit-transition:all 1s ease;
