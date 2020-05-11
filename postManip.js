@@ -12,7 +12,7 @@ class postCatActivator{
 		}
 		this.postCat.classList.add("expanded");
     	this.postCatHeadline.classList.add("active");
-    	AOS.init();
+    	setTimeout(AOS.init,1000);
 	}
 		constructor(step,postCat,postCatHeadline){
 		this.index=step;
