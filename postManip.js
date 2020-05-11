@@ -36,7 +36,6 @@ function getQueryVariable(variable)
 
 for (let step=0;step<postCats.length;step++){
 	postCatActivators[step]=new postCatActivator(step,postCats[step],postCatHeadlines[step]);
-
 }
 var v1=getQueryVariable("activate");
 var n1=parseInt(v1);

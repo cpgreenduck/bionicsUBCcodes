@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .postContainer{
 	width:80%;
 	margin:10px;
@@ -39,6 +46,8 @@
 	display:block;
 	max-height:1px;
 	opacity:0;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	/*transform: translateX(-300px) translateY(-60px) scale(0.01);*/
 }
@@ -46,6 +55,10 @@
 .postCatContainer.expanded{
 	max-height:1000px;
 	opacity:1;
+
+	-webkit-transition: all 1s ease-in 0.5s;
+
+	-o-transition: all 1s ease-in 0.5s;
 
 	transition: all 1s ease-in 0.5s;
 	/*transform: translateX(0) translateY(0) scale(1);*/

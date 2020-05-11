@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
 
 .logo{
@@ -16,8 +23,8 @@
 	background-position:center;
 }
 #about{
-	.aos-init;
-	.aos-animate;
+	aos_init;
+	aos_animate;
 	width:100%;
 	clear:both;
 	border-radius:0px;
@@ -45,24 +52,34 @@
 /*Styles Research/Accomplish */
 #accomplish{
 	text-align:center;
-	justify-content:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
 }
 
 #research-item-cont{
-	.aos-init;
-	.aos-animate;
 	clear:both;
 	position:relative;
 	width:90%;
 	margin:auto 0 auto 0;
 	overflow:hidden;
-	align-items:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 	text-align:center;
-	justify-content:center;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 /*News and Research highlights*/
@@ -92,6 +109,8 @@
 #teamimg{
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/membersbg.png");
 	max-height:120px;
+	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
 	transition:all 1s ease-out;
 	background-size:contain;
 }
@@ -104,7 +123,11 @@
 }
 #teamimg:hover{
 	opacity:0.8;
-	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+	-webkit-transition:all 1s ease-in;
+	-o-transition:all 1s ease-in;
 	transition:all 1s ease-in;
 }
 
@@ -114,7 +137,7 @@
 	background-size:800px;
 	margin-top:-850px;
 	background-color:transparent;
-	z-index=-1;
+	z-index:-1;
 	background-image:url("http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/mapdraft1.png");
 	background-repeat:no-repeat;
 	background-position:center;
@@ -152,7 +175,9 @@
 	text-align:center;
 	height:150px;
 	display:inline-block;
-	transform:scale(1.1) translateX(30px);
+	-webkit-transform:scale(1.1) translateX(30px);
+	    -ms-transform:scale(1.1) translateX(30px);
+	        transform:scale(1.1) translateX(30px);
 }
 #workwithus .frontpage-item.heading>a h1{
 	color:#fff !important;

@@ -1,8 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 p, h1, h2, h3, h4, a{
 	font-family:sans-serif;
 	color:#185685;
 	text-decoration:none;
 	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
 }
 a{
 	color:#002145;
@@ -37,6 +46,8 @@ a{
 	overflow:hidden;
 	position:relative;
 	background-image:url('http://apsc-bionics.sites.olt.ubc.ca/files/2020/05/popupbgL.png');
+	-webkit-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
 	transition: all 1s ease-out;
 }
 .postCatHeadline h2{
@@ -44,12 +55,18 @@ a{
 	margin:0;
 }
 .postCatHeadline:hover{
-	transform:scale(1.1) translateX(5px);
+	-webkit-transform:scale(1.1) translateX(5px);
+	    -ms-transform:scale(1.1) translateX(5px);
+	        transform:scale(1.1) translateX(5px);
+	-webkit-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
 	transition: all 1s ease-in;
 }
 .postCatHeadline.active h2{
   color:	#c2e3fc;
-  transform: scale(1.1) translateX(5px);
+  -webkit-transform: scale(1.1) translateX(5px);
+      -ms-transform: scale(1.1) translateX(5px);
+          transform: scale(1.1) translateX(5px);
 }
 
 .postCatContainer{
@@ -60,6 +77,8 @@ a{
 	/*height:1px;*/
 	max-height:1px;
 	opacity:0;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	float:none;
 	clear:both;
@@ -68,6 +87,8 @@ a{
 	max-height:10000px;
 	opacity:1;
 	/*height:auto;*/
+	-webkit-transition: all 1s ease-in 0.5s;
+	-o-transition: all 1s ease-in 0.5s;
 	transition: all 1s ease-in 0.5s;
 }
 
@@ -107,7 +128,6 @@ a{
 	float:left;
 	overflow:hidden;
 }
-
 
 .fadeclass{
 	.aos_init;

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://cpgreenduck.github.io/bionicsUBCcodes/parallax.css');
 
 /* Frontpage-item styles*/
@@ -23,12 +30,18 @@
 	padding:0 !important;
 	margin:0 !important;
 	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
 	background-color:transparent;
 	min-width:300px;
 }
 .frontpage-item.heading:hover{
-	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
 	-webkit-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
 }
 .frontpage-item.desc{
 	padding:10px;
@@ -64,13 +77,19 @@
 	text-align:center;
 	float:left;
 	-webkit-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	transition:all 1s ease-out;
 	padding:0;
 	z-index:100;
 }
 
 .research-item.aos-init.aos-animate:hover{
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 	-webkit-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
 	z-index:100;
 }
 .research-item img{
@@ -83,54 +102,3 @@
   color:#000;
   opacity:0.6;
 }
-
-
-/* Only for version 1 of home page
-#citations{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-#funding{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-#partnersr{
-	background-image:url("http://apsc-mm.sites.olt.ubc.ca/files/2020/05/simple-stylized-world-map-silhouette-in-modern-vector-25623233-e1588724533586.jpg");
-}
-	
-#research-topics{
-top:-300px;
-background-color:rgba(255,255,255,0.7);
-}
-#partners{
-	opacity:0.8;
-	top:90px;
-	transition: all 1s ease-out;
-	z-index:1;
-}
-#partners:hover{
-	background-color:#000;
-	transition: all 1s ease-in;
-}
-#news, #members{
-  margin:0;
-  min-width:10px;
- /* max-height:700px;
-  overflow:hidden;
-  background-color:#fff;
-}
-#news{
-	width: calc(66% - 40px);
-}
-#members{
-	width: calc(34% - 40px);
-}
-#news .postContainer{
-	.aos-init;
-	.aos-animate;
-	max-height:200px;
-}
-/*end old version*/
-
-
-
-
-

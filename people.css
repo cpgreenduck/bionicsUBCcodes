@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .iso-nav{
  clear:both;
  }
@@ -77,5 +84,4 @@
 .page-id-1917 .modal-body, .page-id-1921 .modal-body{
   overflow:hidden;
 }
-
 
