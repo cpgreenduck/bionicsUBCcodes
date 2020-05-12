@@ -149,6 +149,12 @@
 	clear:both;
 	margin: 20px auto auto auto;
 }
+.map-div-overlay-fadein>a img{
+	max-width:70%;
+	max-height:18%;
+	clear:both;
+	margin: 20px auto auto auto;
+}
 
 .map-div-overlay:hover > .map-div-overlay-fadein{
 	opacity:1;
