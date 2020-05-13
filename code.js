@@ -259,6 +259,7 @@ preloaderImg.addEventListener('load', (event) => {
 /*Control Click Hover over man*/
 container1.addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});
+/*	
 for (let step=0;step<hotspots.length;step++){
 	hotspots[step].addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});}
@@ -266,15 +267,15 @@ for (let step=0;step<hotspots.length;step++){
 popupCont.addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});
 container1.addEventListener("mouseleave",function(event){setTimeout(function(){clickHover.style.opacity="1";
-	clickHover.style.zIndex="10";console.log("exit");clickHover.style.webkitTransform="scale(1)";},3000);});
+	clickHover.style.zIndex="10";console.log("exit");clickHover.style.webkitTransform="scale(1)";},3000);});*/
 
 /* For mobile*/
 /*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 let isMobile=window.matchMedia("only screen and (max-width: 760px)").matches;
-if(isMobile){
+if(isMobile){*/
  container1.addEventListener("click",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("click");clickHover.style.webkitTransform="scale(1.5)";});
-}*/
+/*}*/
 
 /*End ClickHover*/
 
