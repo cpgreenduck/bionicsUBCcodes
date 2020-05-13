@@ -76,6 +76,9 @@
 .modal-footer>a{
   display:none;
 }
+.name.field-item.one-third{
+	display:none;
+}
 
 .page-id-1917 .span4>img, .page-id-1921 .span4>img{
   display:none;
