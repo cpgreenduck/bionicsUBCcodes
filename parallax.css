@@ -80,6 +80,8 @@ body,html{margin:0;padding:0;}
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   /*transform: translateZ(-1px) scale(1.5);*/
   background-attachment:fixed;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
   /* Force the background image to fill the whole element. */
   background-size: cover;
   background-repeat:repeat-y;
