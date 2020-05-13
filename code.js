@@ -259,8 +259,16 @@ preloaderImg.addEventListener('load', (event) => {
 /*Control Click Hover over man*/
 container1.addEventListener("mouseenter",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("enter");clickHover.style.webkitTransform="scale(1.5)";});
+
 container1.addEventListener("mouseleave",function(event){setTimeout(function(){clickHover.style.opacity="1";
 	clickHover.style.zIndex="10";console.log("exit");clickHover.style.webkitTransform="scale(1)";},3000);});
+
+/* For mobile*/
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ container1.addEventListener("click",function(event){clickHover.style.opacity="0";
+	clickHover.style.zIndex="-2";console.log("click");clickHover.style.webkitTransform="scale(1.5)";});
+}
+
 /*End ClickHover*/
 
 
