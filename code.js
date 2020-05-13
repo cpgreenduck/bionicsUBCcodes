@@ -264,10 +264,12 @@ container1.addEventListener("mouseleave",function(event){setTimeout(function(){c
 	clickHover.style.zIndex="10";console.log("exit");clickHover.style.webkitTransform="scale(1)";},3000);});
 
 /* For mobile*/
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+let isMobile=window.matchMedia("only screen and (max-width: 760px)").matches;
+if(isMobile){
  container1.addEventListener("click",function(event){clickHover.style.opacity="0";
 	clickHover.style.zIndex="-2";console.log("click");clickHover.style.webkitTransform="scale(1.5)";});
-}
+}*/
 
 /*End ClickHover*/
 
