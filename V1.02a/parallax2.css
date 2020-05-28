@@ -1,7 +1,7 @@
 /* Tiny reset thingy */
 body,html{margin:0;padding:0;}
 html{}
-body{overflow-x:hidden;transform:translateZ(0);}
+body{overflow-x:hidden;}
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -66,7 +66,7 @@ body{overflow-x:hidden;transform:translateZ(0);}
   background-position: center;
   z-index:0;
   /* Keep the image from overlapping sibling elements. */ 
- transform: translateZ(0px);
+ /*transform: translateZ(0px);*/
   /*will-change:transform;*/
 }
 
